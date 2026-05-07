@@ -5,11 +5,17 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    cursor: url('/paintbrush-cursor.svg') 6 30, auto;
   }
 
   body {
     @apply font-body text-dark bg-white;
     -webkit-font-smoothing: antialiased;
+    cursor: url('/paintbrush-cursor.svg') 6 30, auto;
+  }
+
+  a, button, [role="button"], input, textarea, select, label {
+    cursor: url('/paintbrush-cursor.svg') 6 30, pointer;
   }
 
   h1, h2, h3, h4 {

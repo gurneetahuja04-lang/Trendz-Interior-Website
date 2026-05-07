@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Brush handle -->
+  <rect x="13" y="1" width="5" height="16" rx="2" fill="#C8A96E"/>
+  <!-- Metal ferrule -->
+  <rect x="12" y="15" width="7" height="4" rx="1" fill="#8B7355"/>
+  <!-- Brush bristles -->
+  <ellipse cx="15.5" cy="23" rx="4" ry="6" fill="#1A1A1A"/>
+  <!-- Bristle highlight -->
+  <ellipse cx="14" cy="21" rx="1.5" ry="3" fill="#3a3a3a" opacity="0.6"/>
+  <!-- Paint drop -->
+  <circle cx="15.5" cy="29.5" r="1.5" fill="#C8A96E" opacity="0.85"/>
+</svg>
