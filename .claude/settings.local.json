@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/noorahuja/.nvm/versions/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Users/noorahuja/**)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\")",
+      "Bash(brew list *)",
+      "Bash(brew install *)",
+      "Bash(/Users/noorahuja/Library/Python/3.9/lib/python/site-packages/playwright/driver/node --version)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Initial commit: Trendz Interiors website *)"
+    ]
+  }
+}
