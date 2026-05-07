@@ -1,30 +1,41 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function CustomCursor() {
-  const cursorRef = useRef(null)
+  const [pos, setPos] = useState({ x: -100, y: -100 })
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     const move = (e) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.left = e.clientX + 'px'
-        cursorRef.current.style.top = e.clientY + 'px'
-      }
+      setPos({ x: e.clientX, y: e.clientY })
+      setVisible(true)
     }
+    const hide = () => setVisible(false)
+    const show = () => setVisible(true)
+
     window.addEventListener('mousemove', move)
-    return () => window.removeEventListener('mousemove', move)
+    window.addEventListener('mouseleave', hide)
+    window.addEventListener('mouseenter', show)
+
+    return () => {
+      window.removeEventListener('mousemove', move)
+      window.removeEventListener('mouseleave', hide)
+      window.removeEventListener('mouseenter', show)
+    }
   }, [])
 
   return (
     <div
-      ref={cursorRef}
       style={{
         position: 'fixed',
+        left: pos.x,
+        top: pos.y,
         pointerEvents: 'none',
-        zIndex: 99999,
-        transform: 'translate(-4px, -28px) rotate(-35deg)',
-        fontSize: '28px',
+        zIndex: 999999,
+        transform: 'translate(-4px, -30px) rotate(-30deg)',
+        fontSize: '26px',
         userSelect: 'none',
-        transition: 'left 0.04s linear, top 0.04s linear',
+        opacity: visible ? 1 : 0,
+        transition: 'opacity 0.2s',
       }}
     >
       🖌️
