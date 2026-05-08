@@ -5,23 +5,71 @@ import MarqueeStrip from '../components/MarqueeStrip'
 import { HiX, HiSearch } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
+const BASE = 'https://www.shinhanwall.co.kr/upload/product/'
+
 const allProducts = [
-  // ── BEYOND Catalogue (Shinhan Wall) ──
-  { id: 1,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_L0Tvxr3M_20251218044855.jpg', code: '88695-1' },
-  { id: 2,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_OwrMau9Y_20251218044824.jpg', code: '88695-2' },
-  { id: 3,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Q3knoCzF_20251218044751.jpg', code: '88695-3' },
-  { id: 4,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_JAqX9ydU_20251218044722.jpg', code: '88695-4' },
-  { id: 5,  title: 'Sofpalm',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Kp2PCs3O_20251218044646.jpg', code: '88694-1' },
-  { id: 6,  title: 'Sofpalm',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_LYDAvK23_20251218044615.jpg', code: '88694-2' },
-  { id: 7,  title: 'Arden',     category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_FWb9ZUeY_20251218044501.jpg', code: '88693-1' },
-  { id: 8,  title: 'Arden',     category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_BGU2t8rj_20251218044427.jpg', code: '88693-2' },
-  { id: 9,  title: 'Arden',     category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_UazSTqkB_20251218044319.jpg', code: '88693-4' },
-  { id: 10, title: 'Lucorin',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_9limZuMc_20251218044240.jpg', code: '88692-1' },
-  { id: 11, title: 'Lucorin',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_svhTkR41_20251218044124.jpg', code: '88692-3' },
-  { id: 12, title: 'Marvik',    category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_S1ehV3LZ_20251218044014.jpg', code: '88691-2' },
+  // ── BEYOND Catalogue ──
+  { id: 1,  title: 'Fountain',  category: 'Beyond', image: BASE + '3717407184_L0Tvxr3M_20251218044855.jpg', code: '88695-1' },
+  { id: 2,  title: 'Fountain',  category: 'Beyond', image: BASE + '3717407184_OwrMau9Y_20251218044824.jpg', code: '88695-2' },
+  { id: 3,  title: 'Fountain',  category: 'Beyond', image: BASE + '3717407184_Q3knoCzF_20251218044751.jpg', code: '88695-3' },
+  { id: 4,  title: 'Fountain',  category: 'Beyond', image: BASE + '3717407184_JAqX9ydU_20251218044722.jpg', code: '88695-4' },
+  { id: 5,  title: 'Sofpalm',   category: 'Beyond', image: BASE + '3717407184_Kp2PCs3O_20251218044646.jpg', code: '88694-1' },
+  { id: 6,  title: 'Sofpalm',   category: 'Beyond', image: BASE + '3717407184_LYDAvK23_20251218044615.jpg', code: '88694-2' },
+  { id: 7,  title: 'Arden',     category: 'Beyond', image: BASE + '3717407184_FWb9ZUeY_20251218044501.jpg', code: '88693-1' },
+  { id: 8,  title: 'Arden',     category: 'Beyond', image: BASE + '3717407184_BGU2t8rj_20251218044427.jpg', code: '88693-2' },
+  { id: 9,  title: 'Arden',     category: 'Beyond', image: BASE + '3717407184_UazSTqkB_20251218044319.jpg', code: '88693-4' },
+  { id: 10, title: 'Lucorin',   category: 'Beyond', image: BASE + '3717407184_9limZuMc_20251218044240.jpg', code: '88692-1' },
+  { id: 11, title: 'Lucorin',   category: 'Beyond', image: BASE + '3717407184_svhTkR41_20251218044124.jpg', code: '88692-3' },
+  { id: 12, title: 'Marvik',    category: 'Beyond', image: BASE + '3717407184_S1ehV3LZ_20251218044014.jpg', code: '88691-2' },
+
+  // ── DECENT Catalogue ──
+  { id: 13, title: 'Cora',      category: 'Decent', image: BASE + '3717407184_07fzKjHc_20250722103751.jpg', code: '88653-1' },
+  { id: 14, title: 'Cora',      category: 'Decent', image: BASE + '3717407184_RjHwJ5qC_20250722103704.jpg', code: '88653-2' },
+  { id: 15, title: 'Etto',      category: 'Decent', image: BASE + '3717407184_kb7BWmwI_20250722014851.jpg', code: '88654-1' },
+  { id: 16, title: 'Amelia',    category: 'Decent', image: BASE + '3717407184_Y8I5VPt0_20250722015051.jpg', code: '88655-1' },
+  { id: 17, title: 'Amelia',    category: 'Decent', image: BASE + '3717407184_Tkjvp4ZF_20250722015014.jpg', code: '88655-2' },
+  { id: 18, title: 'Amelia',    category: 'Decent', image: BASE + '3717407184_mMsSp85y_20250722014936.jpg', code: '88655-3' },
+  { id: 19, title: 'Amazon',    category: 'Decent', image: BASE + '3717407184_Yn1UBIMz_20250722015210.jpg', code: '88656-1' },
+  { id: 20, title: 'Amazon',    category: 'Decent', image: BASE + '3717407184_GpT8LefP_20250722015132.jpg', code: '88656-2' },
+  { id: 21, title: 'Plante',    category: 'Decent', image: BASE + '3717407184_Gr7pQLfP_20250722015256.jpg', code: '88657-3' },
+  { id: 22, title: 'Collette',  category: 'Decent', image: BASE + '3717407184_tsJA9647_20250722032908.jpg', code: '88658-1' },
+  { id: 23, title: 'Collette',  category: 'Decent', image: BASE + '3717407184_ouPIsSz3_20250722032724.jpg', code: '88658-3' },
+  { id: 24, title: 'Rubato',    category: 'Decent', image: BASE + '3717407184_KVFPUMBk_20250722033044.jpg', code: '88659-2' },
+  { id: 25, title: 'Rubato',    category: 'Decent', image: BASE + '3717407184_jVLwzN12_20250722033003.jpg', code: '88659-3' },
+  { id: 26, title: 'Piu',       category: 'Decent', image: BASE + '3717407184_wCuD0P6d_20250722033339.jpg', code: '88660-1' },
+  { id: 27, title: 'Piu',       category: 'Decent', image: BASE + '3717407184_GO7hz8Yg_20250722033156.jpg', code: '88660-4' },
+  { id: 28, title: 'Piace',     category: 'Decent', image: BASE + '3717407184_n3albAB9_20250722033550.jpg', code: '88661-1' },
+  { id: 29, title: 'Piace',     category: 'Decent', image: BASE + '3717407184_iPvkzYgy_20250722033444.jpg', code: '88661-3' },
+  { id: 30, title: 'Blanche',   category: 'Decent', image: BASE + '3717407184_GvDhBzZd_20250722034056.jpg', code: '88662-2' },
+  { id: 31, title: 'Blanche',   category: 'Decent', image: BASE + '3717407184_bEMqcoP5_20250722033633.jpg', code: '88662-4' },
+  { id: 32, title: 'Nobile',    category: 'Decent', image: BASE + '3717407184_v5GgQ4sN_20250722035744.jpg', code: '88663-1' },
+  { id: 33, title: 'Nobile',    category: 'Decent', image: BASE + '3717407184_HzphAeEN_20250722035704.jpg', code: '88663-2' },
+  { id: 34, title: 'Ribera',    category: 'Decent', image: BASE + '3717407184_tLnKjh4f_20250722040739.jpg', code: '88664-1' },
+  { id: 35, title: 'Ribera',    category: 'Decent', image: BASE + '3717407184_vlJfG4Hr_20250722040603.jpg', code: '88664-3' },
+  { id: 36, title: 'Morin',     category: 'Decent', image: BASE + '3717407184_LIRZy72b_20250722040913.jpg', code: '88665-2' },
+  { id: 37, title: 'Morin',     category: 'Decent', image: BASE + '3717407184_cNXoKka7_20250722040832.jpg', code: '88665-3' },
+  { id: 38, title: 'Fog',       category: 'Decent', image: BASE + '3717407184_OTjbDz9d_20250722041218.jpg', code: '88666-1' },
+  { id: 39, title: 'Fog',       category: 'Decent', image: BASE + '3717407184_6ijPaDX4_20250722041145.jpg', code: '88666-2' },
+  { id: 40, title: 'Ceramica',  category: 'Decent', image: BASE + '3717407184_qUNhzlFj_20250722041423.jpg', code: '88667-1' },
+  { id: 41, title: 'Ceramica',  category: 'Decent', image: BASE + '3717407184_DjQcIVzh_20250722041256.jpg', code: '88667-3' },
+  { id: 42, title: 'Fossil',    category: 'Decent', image: BASE + '3717407184_8em9AIbv_20250722041524.jpg', code: '88668-3' },
+  { id: 43, title: 'Grotto',    category: 'Decent', image: BASE + '3717407184_4DUNWAOY_20250722041827.jpg', code: '88669-1' },
+  { id: 44, title: 'Grotto',    category: 'Decent', image: BASE + '3717407184_KZ0QOXWx_20250722041750.jpg', code: '88669-2' },
+  { id: 45, title: 'Grotto',    category: 'Decent', image: BASE + '3717407184_WFUT8fN7_20250722041703.jpg', code: '88669-3' },
+  { id: 46, title: 'Evelyn',    category: 'Decent', image: BASE + '3717407184_3hIeMSr6_20250722041942.jpg', code: '88670-2' },
+  { id: 47, title: 'Evelyn',    category: 'Decent', image: BASE + '3717407184_CtU4BbTs_20250722041905.jpg', code: '88670-3' },
+  { id: 48, title: 'Roman',     category: 'Decent', image: BASE + '3717407184_1eZEcGxl_20250722042212.jpg', code: '88671-2' },
+  { id: 49, title: 'Roman',     category: 'Decent', image: BASE + '3717407184_UlZLjfCw_20250722042136.jpg', code: '88671-3' },
+  { id: 50, title: 'Willow',    category: 'Decent', image: BASE + '3717407184_BUZhmwx5_20250722042519.jpg', code: '88672-1' },
+  { id: 51, title: 'Willow',    category: 'Decent', image: BASE + '3717407184_lmY9e7GM_20250722042409.jpg', code: '88672-3' },
+  { id: 52, title: 'Jute',      category: 'Decent', image: BASE + '3717407184_9z2x8fS3_20250722042921.jpg', code: '88673-2' },
+  { id: 53, title: 'Jute',      category: 'Decent', image: BASE + '3717407184_i5nWrkhS_20250722042846.jpg', code: '88673-3' },
+  { id: 54, title: 'Jute',      category: 'Decent', image: BASE + '3717407184_9ykP3QzC_20250722042729.jpg', code: '88673-5' },
+  { id: 55, title: 'Genero',    category: 'Decent', image: BASE + '3717407184_Nzty6cQA_20250722043107.jpg', code: '88674-2' },
+  { id: 56, title: 'Genero',    category: 'Decent', image: BASE + '3717407184_HwMRA6bg_20250722043033.jpg', code: '88674-3' },
 ]
 
-const categories = ['All', 'Beyond']
+const categories = ['All', 'Beyond', 'Decent']
 
 export default function Collections() {
   const [active, setActive] = useState('All')
