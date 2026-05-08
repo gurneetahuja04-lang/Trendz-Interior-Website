@@ -13,7 +13,7 @@ const usps = [
   {
     icon: HiSparkles,
     title: 'Premium Quality',
-    desc: 'Carefully sourced from the world's leading wallpaper manufacturers.',
+    desc: "Carefully sourced from the world's leading wallpaper manufacturers.",
   },
   {
     icon: HiStar,
