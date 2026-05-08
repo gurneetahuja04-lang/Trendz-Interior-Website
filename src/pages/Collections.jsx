@@ -6,21 +6,22 @@ import { HiX, HiSearch } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
 const allProducts = [
-  { id: 1, title: 'Garden Bloom', category: 'Floral', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80', code: 'WT-FL-001' },
-  { id: 2, title: 'Marble Luxe', category: 'Luxury', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80', code: 'WT-LX-002' },
-  { id: 3, title: 'Urban Concrete', category: 'Textured', image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80', code: 'WT-TX-003' },
-  { id: 4, title: 'Geo Lines', category: 'Abstract', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80', code: 'WT-AB-004' },
-  { id: 5, title: 'Petal Blush', category: 'Floral', image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&q=80', code: 'WT-FL-005' },
-  { id: 6, title: 'Office Suite', category: 'Commercial', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80', code: 'WT-CM-006' },
-  { id: 7, title: 'Gold Leaf', category: 'Luxury', image: 'https://images.unsplash.com/photo-1616593871468-2a9e0e7f6c56?w=600&q=80', code: 'WT-LX-007' },
-  { id: 8, title: 'Rainbow Dreams', category: 'Kids', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80', code: 'WT-KD-008' },
-  { id: 9, title: 'Wave Texture', category: 'Textured', image: 'https://images.unsplash.com/photo-1562184552-997c461abbe6?w=600&q=80', code: 'WT-TX-009' },
-  { id: 10, title: 'Cherry Blossom', category: 'Floral', image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&q=80', code: 'WT-FL-010' },
-  { id: 11, title: 'Midnight Grid', category: 'Abstract', image: 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=600&q=80', code: 'WT-AB-011' },
-  { id: 12, title: 'Cloud Nine', category: 'Kids', image: 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&q=80', code: 'WT-KD-012' },
+  // ── BEYOND Catalogue (Shinhan Wall) ──
+  { id: 1,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_L0Tvxr3M_20251218044855.jpg', code: '88695-1' },
+  { id: 2,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_OwrMau9Y_20251218044824.jpg', code: '88695-2' },
+  { id: 3,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Q3knoCzF_20251218044751.jpg', code: '88695-3' },
+  { id: 4,  title: 'Fountain',  category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_JAqX9ydU_20251218044722.jpg', code: '88695-4' },
+  { id: 5,  title: 'Sofpalm',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Kp2PCs3O_20251218044646.jpg', code: '88694-1' },
+  { id: 6,  title: 'Sofpalm',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_LYDAvK23_20251218044615.jpg', code: '88694-2' },
+  { id: 7,  title: 'Arden',     category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_FWb9ZUeY_20251218044501.jpg', code: '88693-1' },
+  { id: 8,  title: 'Arden',     category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_BGU2t8rj_20251218044427.jpg', code: '88693-2' },
+  { id: 9,  title: 'Arden',     category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_UazSTqkB_20251218044319.jpg', code: '88693-4' },
+  { id: 10, title: 'Lucorin',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_9limZuMc_20251218044240.jpg', code: '88692-1' },
+  { id: 11, title: 'Lucorin',   category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_svhTkR41_20251218044124.jpg', code: '88692-3' },
+  { id: 12, title: 'Marvik',    category: 'Beyond', image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_S1ehV3LZ_20251218044014.jpg', code: '88691-2' },
 ]
 
-const categories = ['All', 'Floral', 'Textured', 'Abstract', 'Luxury', 'Kids', 'Commercial']
+const categories = ['All', 'Beyond']
 
 export default function Collections() {
   const [active, setActive] = useState('All')

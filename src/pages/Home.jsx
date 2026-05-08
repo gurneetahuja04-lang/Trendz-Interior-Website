@@ -29,34 +29,34 @@ const usps = [
 
 const categories = [
   {
-    title: 'Floral & Botanical',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-    count: '1,200+ designs',
+    title: 'Beyond — Fountain',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_L0Tvxr3M_20251218044855.jpg',
+    count: 'Beyond Collection',
   },
   {
-    title: 'Textured & 3D',
-    image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
-    count: '800+ designs',
+    title: 'Beyond — Arden',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_FWb9ZUeY_20251218044501.jpg',
+    count: 'Beyond Collection',
   },
   {
-    title: 'Abstract & Geometric',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80',
-    count: '950+ designs',
+    title: 'Beyond — Sofpalm',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Kp2PCs3O_20251218044646.jpg',
+    count: 'Beyond Collection',
   },
   {
-    title: 'Luxury & Metallic',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
-    count: '600+ designs',
+    title: 'Beyond — Lucorin',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_9limZuMc_20251218044240.jpg',
+    count: 'Beyond Collection',
   },
   {
-    title: 'Kids & Nursery',
-    image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&q=80',
-    count: '400+ designs',
+    title: 'Beyond — Marvik',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_S1ehV3LZ_20251218044014.jpg',
+    count: 'Beyond Collection',
   },
   {
-    title: 'Commercial & Office',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80',
-    count: '700+ designs',
+    title: 'Beyond — Fountain',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Q3knoCzF_20251218044751.jpg',
+    count: 'Beyond Collection',
   },
 ]
 
