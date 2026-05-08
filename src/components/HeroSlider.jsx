@@ -16,7 +16,7 @@ const slides = [
   {
     image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1920&q=80',
     heading: 'A House of Wall Coverings',
-    sub: 'Expert guidance from New Delhi's most trusted wallpaper destination',
+    sub: "Expert guidance from New Delhi's most trusted wallpaper destination",
   },
   {
     image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80',
