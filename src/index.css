@@ -5,6 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    cursor: none;
   }
 
   body {
@@ -16,10 +17,11 @@
   a, button, [role="button"], input, textarea, select, label {
     cursor: none;
   }
+}
 
-  h1, h2, h3, h4 {
-    @apply font-display;
-  }
+/* Force hide default cursor everywhere - outside @layer so it takes priority */
+*, *::before, *::after {
+  cursor: none !important;
 }
 
 @layer utilities {
