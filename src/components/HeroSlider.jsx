@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80',
     heading: 'Walls That Tell Stories',
     sub: 'Discover 10,000+ premium wallpaper designs for every space',
   },
