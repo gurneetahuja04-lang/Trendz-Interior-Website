@@ -34,28 +34,28 @@ const categories = [
     count: 'Beyond Collection',
   },
   {
-    title: 'Beyond — Arden',
-    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_FWb9ZUeY_20251218044501.jpg',
-    count: 'Beyond Collection',
+    title: 'Essence — Real Plaster',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_ISs1zg3W_20230210030209.jpg',
+    count: 'Essence Collection',
   },
   {
-    title: 'Beyond — Sofpalm',
-    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Kp2PCs3O_20251218044646.jpg',
-    count: 'Beyond Collection',
+    title: 'Natural — Rain Tree',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_AbcpdQsV_20240731041117.jpg',
+    count: 'Natural Collection',
   },
   {
-    title: 'Beyond — Lucorin',
-    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_9limZuMc_20251218044240.jpg',
-    count: 'Beyond Collection',
+    title: 'Artis — Selvern',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_EjIHaiRW_20230424045343.jpg',
+    count: 'Artis Collection',
+  },
+  {
+    title: 'Motive — Milton',
+    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_MCvdY7XR_20240104012639.jpg',
+    count: 'Motive Collection',
   },
   {
     title: 'Beyond — Marvik',
     image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_S1ehV3LZ_20251218044014.jpg',
-    count: 'Beyond Collection',
-  },
-  {
-    title: 'Beyond — Fountain',
-    image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_Q3knoCzF_20251218044751.jpg',
     count: 'Beyond Collection',
   },
 ]
@@ -144,7 +144,7 @@ export default function Home() {
       {/* CTA Banner */}
       <section
         className="py-28 bg-cover bg-center relative"
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80)' }}
+        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1600&q=80)' }}
       >
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 max-w-3xl mx-auto text-center px-6">

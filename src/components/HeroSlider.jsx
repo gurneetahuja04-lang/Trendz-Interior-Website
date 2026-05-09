@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom'
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=1920&q=80',
     heading: 'Walls That Tell Stories',
     sub: 'Discover 10,000+ premium wallpaper designs for every space',
   },
   {
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1920&q=80',
     heading: 'Texture. Colour. Character.',
     sub: 'Transform your interiors with the finest wall coverings from around the world',
   },
   {
-    image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=80',
     heading: 'A House of Wall Coverings',
     sub: "Expert guidance from New Delhi's most trusted wallpaper destination",
   },
   {
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80',
     heading: 'Crafted for Every Space',
     sub: 'Residential, commercial, hospitality — we have a design for every vision',
   },
   {
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1560448075-bb485b1f5f6b?w=1920&q=80',
     heading: 'Where Style Meets Surface',
     sub: 'Exclusive collections curated by design experts',
   },
