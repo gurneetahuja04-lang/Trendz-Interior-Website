@@ -2,7 +2,10 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import FadeIn from '../components/FadeIn'
 import MarqueeStrip from '../components/MarqueeStrip'
-import { HiX, HiSearch } from 'react-icons/hi'
+import { HiX, HiSearch, HiShieldCheck } from 'react-icons/hi'
+import { MdOutlineCleaningServices, MdOutlineInstallDesktop } from 'react-icons/md'
+import { GiBrickWall } from 'react-icons/gi'
+import { TbLeaf } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
 
 const BASE = 'https://www.shinhanwall.co.kr/upload/product/'
@@ -472,7 +475,7 @@ export default function Collections() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 overflow-y-auto"
             onClick={() => setLightbox(null)}
           >
             <motion.div
@@ -480,11 +483,12 @@ export default function Collections() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-white max-w-2xl w-full rounded-sm overflow-hidden"
+              className="bg-white max-w-2xl w-full rounded-sm overflow-hidden my-auto"
               onClick={e => e.stopPropagation()}
             >
+              {/* Image */}
               <div className="relative">
-                <img src={lightbox.image} alt={lightbox.title} className="w-full object-cover max-h-[60vh]" />
+                <img src={lightbox.image} alt={lightbox.title} className="w-full object-cover max-h-[50vh]" />
                 <button
                   onClick={() => setLightbox(null)}
                   className="absolute top-4 right-4 bg-white/90 rounded-full p-1.5 hover:bg-white"
@@ -492,21 +496,51 @@ export default function Collections() {
                 >
                   <HiX size={20} className="text-dark" />
                 </button>
+                <span className="absolute top-4 left-4 bg-gold text-white text-xs px-3 py-1 rounded-sm font-body tracking-wide">
+                  {lightbox.category}
+                </span>
               </div>
-              <div className="p-6 flex items-center justify-between">
+
+              {/* Title + CTA */}
+              <div className="px-6 pt-5 pb-4 flex items-start justify-between gap-4">
                 <div>
                   <h2 className="font-display text-2xl text-dark">{lightbox.title}</h2>
-                  <p className="text-dark/50 text-sm font-body mt-1">
-                    {lightbox.category} · {lightbox.code}
-                  </p>
+                  <p className="text-dark/50 text-sm font-body mt-1">Code: {lightbox.code}</p>
                 </div>
                 <Link
                   to="/contact"
                   onClick={() => setLightbox(null)}
-                  className="bg-gold text-white text-sm font-body font-medium px-6 py-2.5 rounded-sm hover:bg-opacity-90 transition-all"
+                  className="shrink-0 bg-gold text-white text-sm font-body font-medium px-6 py-2.5 rounded-sm hover:bg-opacity-90 transition-all"
                 >
                   Enquire Now
                 </Link>
+              </div>
+
+              {/* Quality blurb */}
+              <div className="px-6 pb-5">
+                <p className="text-dark/60 text-sm font-body leading-relaxed border-l-2 border-gold pl-3">
+                  Sourced directly from <span className="text-dark font-medium">Shinhan Wall Coverings, South Korea</span> — one of Asia's most trusted wallpaper manufacturers. Every design is crafted to international quality standards, offering durability, precision print, and long-lasting performance for both residential and commercial spaces.
+                </p>
+              </div>
+
+              {/* Features strip */}
+              <div className="bg-offwhite border-t border-cream px-6 py-5">
+                <p className="text-center text-xs tracking-[0.2em] uppercase font-body text-dark/40 mb-5">Safe for Rentals &amp; Apartments</p>
+                <div className="grid grid-cols-5 gap-3 text-center">
+                  {[
+                    { icon: <GiBrickWall size={26} />, label: 'Durable', sub: 'Moisture resistant' },
+                    { icon: <MdOutlineInstallDesktop size={26} />, label: 'Easy to Install', sub: 'Adhesive backing' },
+                    { icon: <MdOutlineCleaningServices size={26} />, label: 'Easy to Clean', sub: 'Washable surface' },
+                    { icon: <HiShieldCheck size={26} />, label: 'Damage Free', sub: 'No sticky residue' },
+                    { icon: <TbLeaf size={26} />, label: 'ECO Safe', sub: 'Kid & infant safe' },
+                  ].map(({ icon, label, sub }) => (
+                    <div key={label} className="flex flex-col items-center gap-1.5">
+                      <div className="text-gold">{icon}</div>
+                      <p className="font-body font-semibold text-dark text-xs leading-tight">{label}</p>
+                      <p className="font-body text-dark/40 text-xs leading-tight">{sub}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
           </motion.div>
