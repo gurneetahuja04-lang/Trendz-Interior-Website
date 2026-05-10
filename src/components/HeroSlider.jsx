@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom'
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1400&q=75&fm=webp',
     heading: 'Walls That Tell Stories',
     sub: 'Discover 10,000+ premium wallpaper designs for every space',
   },
   {
-    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1400&q=75&fm=webp',
     heading: 'Texture. Colour. Character.',
     sub: 'Transform your interiors with the finest wall coverings from around the world',
   },
   {
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1400&q=75&fm=webp',
     heading: 'A House of Wall Coverings',
     sub: "Expert guidance from New Delhi's most trusted wallpaper destination",
   },
   {
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&q=75&fm=webp',
     heading: 'Crafted for Every Space',
     sub: 'Residential, commercial, hospitality, we have a design for every vision',
   },
   {
-    image: 'https://images.unsplash.com/photo-1560448075-bb485b1f5f6b?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1560448075-bb485b1f5f6b?w=1400&q=75&fm=webp',
     heading: 'Where Style Meets Surface',
     sub: 'Exclusive collections curated by design experts',
   },
@@ -56,6 +56,8 @@ export default function HeroSlider() {
             src={slides[current].image}
             alt=""
             className="w-full h-full object-cover scale-105"
+            fetchpriority={current === 0 ? 'high' : 'low'}
+            loading={current === 0 ? 'eager' : 'lazy'}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         </motion.div>

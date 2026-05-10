@@ -367,11 +367,16 @@ const catalogueInfo = {
   },
 }
 
+const PAGE_SIZE = 24
+
 export default function Collections() {
   const [active, setActive] = useState('All')
   const [lightbox, setLightbox] = useState(null)
+  const [page, setPage] = useState(1)
 
   const filtered = active === 'All' ? allProducts : allProducts.filter(p => p.category === active)
+  const visible = filtered.slice(0, page * PAGE_SIZE)
+  const hasMore = visible.length < filtered.length
 
   return (
     <main className="pt-20">
@@ -392,7 +397,7 @@ export default function Collections() {
           {categories.map(cat => (
             <button
               key={cat}
-              onClick={() => setActive(cat)}
+              onClick={() => { setActive(cat); setPage(1) }}
               className={`shrink-0 px-5 py-2 text-sm font-body font-medium rounded-sm border transition-all ${
                 active === cat
                   ? 'bg-dark text-white border-dark'
@@ -433,7 +438,7 @@ export default function Collections() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
           >
             <AnimatePresence>
-              {filtered.map(product => (
+              {visible.map((product, idx) => (
                 <motion.div
                   key={product.id}
                   layout
@@ -448,6 +453,8 @@ export default function Collections() {
                     <img
                       src={product.image}
                       alt={product.title}
+                      loading={idx < 8 ? 'eager' : 'lazy'}
+                      decoding="async"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-300 flex items-center justify-center">
@@ -465,6 +472,18 @@ export default function Collections() {
               ))}
             </AnimatePresence>
           </motion.div>
+
+          {/* Load More */}
+          {hasMore && (
+            <div className="text-center mt-12">
+              <button
+                onClick={() => setPage(p => p + 1)}
+                className="border border-dark text-dark px-10 py-3.5 text-sm font-medium tracking-wide hover:bg-dark hover:text-white transition-all rounded-sm font-body"
+              >
+                Load More ({filtered.length - visible.length} remaining)
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
