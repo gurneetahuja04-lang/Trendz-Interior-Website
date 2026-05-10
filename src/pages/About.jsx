@@ -3,18 +3,18 @@ import MarqueeStrip from '../components/MarqueeStrip'
 import { Link } from 'react-router-dom'
 
 const milestones = [
-  { year: '1995', event: 'Founded in New Delhi\'s Pahar Ganj market' },
-  { year: '2002', event: 'Expanded to 5,000+ wallpaper SKUs' },
-  { year: '2010', event: 'Launched commercial & hospitality division' },
-  { year: '2016', event: 'Reached 10,000+ design catalogue milestone' },
-  { year: '2020', event: 'Pan-India delivery network established' },
-  { year: '2024', event: 'Digital platform launch — now online' },
+  { year: '2014', event: 'Founded in New Delhi\'s Pahar Ganj market' },
+  { year: '2016', event: 'Expanded to 5,000+ wallpaper designs' },
+  { year: '2018', event: 'Launched commercial and hospitality division' },
+  { year: '2020', event: 'Reached 10,000+ design catalogue milestone' },
+  { year: '2022', event: 'Pan-India delivery network established' },
+  { year: '2024', event: 'Digital platform launched, now online' },
 ]
 
 const values = [
   { title: 'Quality First', desc: 'Every product is sourced from certified manufacturers meeting international standards.' },
   { title: 'Customer Centric', desc: 'From selection to installation, our team guides you through every step.' },
-  { title: 'Design Excellence', desc: 'We curate with an eye for detail — only the finest designs make our collection.' },
+  { title: 'Design Excellence', desc: 'We curate with an eye for detail, bringing only the finest designs to our collection.' },
 ]
 
 export default function About() {
@@ -23,7 +23,7 @@ export default function About() {
       {/* Hero */}
       <section
         className="py-32 bg-cover bg-center relative"
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80)' }}
+        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1600&q=80)' }}
       >
         <div className="absolute inset-0 bg-dark/65" />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
@@ -33,7 +33,7 @@ export default function About() {
               Passion for Beautiful Walls
             </h1>
             <p className="text-white/70 font-body text-lg max-w-2xl mx-auto">
-              For nearly three decades, Trendz Interiors has been the trusted destination for premium wall coverings in New Delhi — and now, across India.
+              Since 2014, Trendz Interiors has been the trusted destination for premium wall coverings in New Delhi and now, across India.
             </p>
           </FadeIn>
         </div>
@@ -50,7 +50,7 @@ export default function About() {
                 className="rounded-sm w-full object-cover aspect-[4/5]"
               />
               <div className="absolute -bottom-6 -right-6 bg-gold text-white p-6 text-center w-32 h-32 flex flex-col justify-center rounded-sm">
-                <p className="font-display text-3xl font-bold">30+</p>
+                <p className="font-display text-3xl font-bold">10+</p>
                 <p className="text-xs font-body mt-1 text-white/80">Years of Excellence</p>
               </div>
             </div>
@@ -62,13 +62,13 @@ export default function About() {
               New Delhi's Most Trusted Wall Covering Destination
             </h2>
             <p className="text-dark/65 font-body leading-relaxed mb-4">
-              Founded in the heart of Pahar Ganj, New Delhi, Trendz Interiors Pvt. Ltd. — operating under the brand name <strong className="text-dark">Wall Trendz</strong> — has been transforming spaces with premium wallpapers for over three decades.
+              Founded in 2014 in the heart of Pahar Ganj, New Delhi, Trendz Interiors Pvt. Ltd. has been transforming spaces with premium wallpapers, operating under the brand name <strong className="text-dark">Trendz</strong>.
             </p>
             <p className="text-dark/65 font-body leading-relaxed mb-4">
-              With a catalogue of over 10,000 designs spanning textures, florals, geometrics, luxury metallics, and children's themes, we offer the widest selection under one roof in the city.
+              With a catalogue of over 10,000 designs spanning textures, florals, geometrics, luxury metallics and children's themes, we offer the widest selection under one roof in the city.
             </p>
             <p className="text-dark/65 font-body leading-relaxed mb-8">
-              Our team of design consultants brings expertise, passion, and a personal touch to every project — whether you're redesigning a single room or furnishing an entire commercial complex.
+              Our team of design consultants brings expertise, passion and a personal touch to every project, whether you're redesigning a single room or furnishing an entire commercial complex.
             </p>
             <Link
               to="/contact"
@@ -80,18 +80,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* Director */}
+      {/* Director Quote */}
       <section className="py-20 bg-offwhite">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <FadeIn>
             <div className="w-20 h-20 bg-cream rounded-full mx-auto mb-6 flex items-center justify-center">
-              <span className="font-display text-2xl text-gold font-bold">IM</span>
+              <span className="font-display text-2xl text-gold font-bold">T</span>
             </div>
             <blockquote className="font-display text-2xl md:text-3xl text-dark italic leading-relaxed mb-6">
-              "Our vision has always been simple — to bring the world's most beautiful wall coverings to every home and office in India."
+              "Our vision has always been simple: to bring the world's most beautiful wall coverings to every home and office in India."
             </blockquote>
             <p className="font-body text-dark/60 text-sm tracking-wide">
-              — <strong className="text-dark font-medium">Inder Mohan Singh</strong>, Director, Trendz Interiors Pvt. Ltd.
+              Director, Trendz Interiors Pvt. Ltd.
             </p>
           </FadeIn>
         </div>

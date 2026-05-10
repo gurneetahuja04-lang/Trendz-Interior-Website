@@ -339,31 +339,31 @@ const categories = ['All', 'Beyond', 'Decent', 'Dream World', 'Natural', 'Essenc
 const catalogueInfo = {
   Beyond: {
     tagline: 'Design & Fabric Collection',
-    description: 'Divided into two sections — a variety of trendy design patterns and a fabric section expressing the deep texture of various fabric materials.',
+    description: 'Divided into two sections, a variety of trendy design patterns and a fabric section expressing the deep texture of various fabric materials.',
   },
   Decent: {
     tagline: 'Refined Everyday Elegance',
-    description: 'A collection of understated, sophisticated wallpapers crafted for spaces that value quiet luxury — timeless textures and gentle tones for modern living.',
+    description: 'A collection of understated, sophisticated wallpapers crafted for spaces that value quiet luxury, timeless textures and gentle tones for modern living.',
   },
   'Dream World': {
     tagline: 'A World of Imagination for Kids',
-    description: 'Vibrant, playful designs that spark creativity and bring colour to every corner of a child\'s room — from adventurous characters to dreamy landscapes.',
+    description: 'Vibrant, playful designs that spark creativity and bring colour to every corner of a child\'s room, from adventurous characters to dreamy landscapes.',
   },
   Natural: {
     tagline: 'Earth-Inspired Textures',
-    description: 'Bringing the beauty of the natural world indoors — stone, wood, botanical, and organic motifs that create warmth and authenticity in any space.',
+    description: 'Bringing the beauty of the natural world indoors, stone, wood, botanical, and organic motifs that create warmth and authenticity in any space.',
   },
   Essence: {
     tagline: 'Pure Texture, Pure Form',
-    description: 'A celebration of material and surface — plaster effects, fabric weaves and subtle tones that layer depth and character onto any wall.',
+    description: 'A celebration of material and surface, plaster effects, fabric weaves and subtle tones that layer depth and character onto any wall.',
   },
   Artis: {
     tagline: 'Artistic Expression on Every Wall',
-    description: 'Bold patterns, refined geometrics and designer-curated motifs that transform walls into a canvas — for interiors that make a statement.',
+    description: 'Bold patterns, refined geometrics and designer-curated motifs that transform walls into a canvas, for interiors that make a statement.',
   },
   Motive: {
     tagline: 'Pattern with Purpose',
-    description: 'Structured, contemporary designs that bring rhythm and visual energy to a room — ideal for feature walls and modern interior schemes.',
+    description: 'Structured, contemporary designs that bring rhythm and visual energy to a room, ideal for feature walls and modern interior schemes.',
   },
 }
 
@@ -519,7 +519,7 @@ export default function Collections() {
               {/* Quality blurb */}
               <div className="px-6 pb-5">
                 <p className="text-dark/60 text-sm font-body leading-relaxed border-l-2 border-gold pl-3">
-                  Sourced directly from <span className="text-dark font-medium">Shinhan Wall Coverings, South Korea</span> — one of Asia's most trusted wallpaper manufacturers. Every design is crafted to international quality standards, offering durability, precision print, and long-lasting performance for both residential and commercial spaces.
+                  Sourced directly from <span className="text-dark font-medium">Shinhan Wall Coverings, South Korea</span>, one of Asia's most trusted wallpaper manufacturers. Every design is crafted to international quality standards, offering durability, precision print, and long-lasting performance for both residential and commercial spaces.
                 </p>
               </div>
 

@@ -21,7 +21,7 @@ const slides = [
   {
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80',
     heading: 'Crafted for Every Space',
-    sub: 'Residential, commercial, hospitality — we have a design for every vision',
+    sub: 'Residential, commercial, hospitality, we have a design for every vision',
   },
   {
     image: 'https://images.unsplash.com/photo-1560448075-bb485b1f5f6b?w=1920&q=80',

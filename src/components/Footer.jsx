@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="font-display font-bold text-2xl mb-1">WALL TRENDZ</p>
           <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">A House of Wall Coverings</p>
           <p className="text-white/60 text-sm leading-relaxed">
-            Trendz Interiors Pvt. Ltd. — bringing the world's finest wall coverings to your space since decades.
+            Trendz Interiors Pvt. Ltd., bringing the world's finest wall coverings to your space since decades.
           </p>
         </div>
 

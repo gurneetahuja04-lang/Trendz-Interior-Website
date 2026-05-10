@@ -40,7 +40,7 @@ export default function Contact() {
           <p className="text-gold text-xs tracking-[0.3em] uppercase font-body mb-3">Get in Touch</p>
           <h1 className="font-display text-5xl md:text-6xl text-dark">Contact & Enquiry</h1>
           <p className="text-dark/60 font-body mt-4 max-w-lg mx-auto">
-            Visit our showroom, call us, or drop an enquiry below — we'll get back to you promptly.
+            Visit our showroom, call us, or drop an enquiry below, we'll get back to you promptly.
           </p>
         </FadeIn>
       </section>

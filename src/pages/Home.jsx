@@ -104,7 +104,7 @@ export default function Home() {
             <p className="text-gold text-xs tracking-[0.3em] uppercase font-body mb-3">Browse</p>
             <h2 className="font-display text-4xl md:text-5xl text-dark">Featured Collections</h2>
             <p className="text-dark/60 font-body mt-4 max-w-lg mx-auto">
-              From timeless classics to contemporary masterpieces — find the design that speaks to you.
+              From timeless classics to contemporary masterpieces, find the design that speaks to you.
             </p>
           </FadeIn>
 
