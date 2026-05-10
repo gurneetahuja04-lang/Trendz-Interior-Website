@@ -333,6 +333,37 @@ const allProducts = [
 
 const categories = ['All', 'Beyond', 'Decent', 'Dream World', 'Natural', 'Essence', 'Artis', 'Motive']
 
+const catalogueInfo = {
+  Beyond: {
+    tagline: 'Design & Fabric Collection',
+    description: 'Divided into two sections — a variety of trendy design patterns and a fabric section expressing the deep texture of various fabric materials.',
+  },
+  Decent: {
+    tagline: 'Refined Everyday Elegance',
+    description: 'A collection of understated, sophisticated wallpapers crafted for spaces that value quiet luxury — timeless textures and gentle tones for modern living.',
+  },
+  'Dream World': {
+    tagline: 'A World of Imagination for Kids',
+    description: 'Vibrant, playful designs that spark creativity and bring colour to every corner of a child\'s room — from adventurous characters to dreamy landscapes.',
+  },
+  Natural: {
+    tagline: 'Earth-Inspired Textures',
+    description: 'Bringing the beauty of the natural world indoors — stone, wood, botanical, and organic motifs that create warmth and authenticity in any space.',
+  },
+  Essence: {
+    tagline: 'Pure Texture, Pure Form',
+    description: 'A celebration of material and surface — plaster effects, fabric weaves and subtle tones that layer depth and character onto any wall.',
+  },
+  Artis: {
+    tagline: 'Artistic Expression on Every Wall',
+    description: 'Bold patterns, refined geometrics and designer-curated motifs that transform walls into a canvas — for interiors that make a statement.',
+  },
+  Motive: {
+    tagline: 'Pattern with Purpose',
+    description: 'Structured, contemporary designs that bring rhythm and visual energy to a room — ideal for feature walls and modern interior schemes.',
+  },
+}
+
 export default function Collections() {
   const [active, setActive] = useState('All')
   const [lightbox, setLightbox] = useState(null)
@@ -370,6 +401,26 @@ export default function Collections() {
           ))}
         </div>
       </section>
+
+      {/* Catalogue Description */}
+      <AnimatePresence mode="wait">
+        {active !== 'All' && catalogueInfo[active] && (
+          <motion.section
+            key={active}
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.4 }}
+            className="bg-cream/50 border-b border-cream"
+          >
+            <div className="max-w-7xl mx-auto px-6 py-10 text-center">
+              <p className="text-gold text-xs tracking-[0.3em] uppercase font-body mb-2">{active}</p>
+              <h2 className="font-display text-3xl md:text-4xl text-dark mb-3">{catalogueInfo[active].tagline}</h2>
+              <p className="text-dark/60 font-body max-w-xl mx-auto text-sm leading-relaxed">{catalogueInfo[active].description}</p>
+            </div>
+          </motion.section>
+        )}
+      </AnimatePresence>
 
       {/* Grid */}
       <section className="py-16 bg-white">

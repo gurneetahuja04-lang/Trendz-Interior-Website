@@ -32,11 +32,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex flex-col leading-tight">
-          <span className={`font-display font-bold text-xl tracking-wide transition-colors ${scrolled ? 'text-dark' : 'text-white'}`}>
-            WALL TRENDZ
+          <span
+            className="font-display font-bold text-2xl tracking-wide"
+            style={{ background: 'linear-gradient(135deg, #7B3F3F 0%, #C4788A 60%, #D4909A 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
+          >
+            Trendz
           </span>
           <span className={`text-xs font-body tracking-[0.2em] uppercase transition-colors ${scrolled ? 'text-gold' : 'text-gold'}`}>
-            A House of Wall Coverings
+            Trendz Interiors
           </span>
         </Link>
 

@@ -29,32 +29,32 @@ const usps = [
 
 const categories = [
   {
-    title: 'Beyond — Fountain',
+    title: 'Beyond · Fountain',
     image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_L0Tvxr3M_20251218044855.jpg',
     count: 'Beyond Collection',
   },
   {
-    title: 'Essence — Real Plaster',
+    title: 'Essence · Real Plaster',
     image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_ISs1zg3W_20230210030209.jpg',
     count: 'Essence Collection',
   },
   {
-    title: 'Natural — Rain Tree',
+    title: 'Natural · Rain Tree',
     image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_AbcpdQsV_20240731041117.jpg',
     count: 'Natural Collection',
   },
   {
-    title: 'Artis — Selvern',
+    title: 'Artis · Selvern',
     image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_EjIHaiRW_20230424045343.jpg',
     count: 'Artis Collection',
   },
   {
-    title: 'Motive — Milton',
+    title: 'Motive · Milton',
     image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_MCvdY7XR_20240104012639.jpg',
     count: 'Motive Collection',
   },
   {
-    title: 'Beyond — Marvik',
+    title: 'Beyond · Marvik',
     image: 'https://www.shinhanwall.co.kr/upload/product/3717407184_S1ehV3LZ_20251218044014.jpg',
     count: 'Beyond Collection',
   },
